@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/recent_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/recent_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/recent_blue" />
+
+        <TextView
+            android:id="@+id/recent_txt"
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:text="@string/recent"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text11" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/been_there_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/been_there_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/discover_gray" />
+
+        <TextView
+            android:id="@+id/been_there_txt"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text11" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/to_been_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/to_been_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/hidden_gray" />
+
+        <TextView
+            android:id="@+id/to_been_txt"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text11" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hidden_gem_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/hidden_gem_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/undiscover_gray" />
+
+        <TextView
+            android:id="@+id/hidden_gem_txt"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text11" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

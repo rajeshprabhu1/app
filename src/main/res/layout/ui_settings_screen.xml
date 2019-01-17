@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/setting_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/app_color">
+    <RelativeLayout
+        android:id="@+id/setting_screen_header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_header_view" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_below="@+id/setting_screen_header_lay"
+        android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+       style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size45">
+
+        <TextView
+            android:id="@+id/setting_edit_yout_profile"
+            style="@style/TextRegular"
+            android:textSize="@dimen/text13"
+            android:textColor="@color/black"
+            android:text="@string/edit_your_profile"
+            android:gravity="start"
+            android:padding="@dimen/size13"/>
+        <TextView
+            style="@style/TextRegular"
+            android:textSize="@dimen/text13"
+            android:textColor="@color/black"
+            android:text="@string/about_undiscover"
+            android:gravity="start"
+            android:padding="@dimen/size13"/>
+        <TextView
+            style="@style/TextRegular"
+            android:textSize="@dimen/text13"
+            android:textColor="@color/black"
+            android:text="@string/terms_cond"
+            android:gravity="start"
+            android:padding="@dimen/size13"/>
+        <TextView
+            style="@style/TextRegular"
+            android:textSize="@dimen/text13"
+            android:textColor="@color/black"
+            android:text="@string/privacy_policy"
+            android:gravity="start"
+            android:padding="@dimen/size13"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/setting_logout_txt"
+       style="@style/TextRegular"
+        android:textSize="@dimen/text13"
+        android:textColor="@color/black"
+        android:text="@string/logout"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/size20"/>
+</RelativeLayout>

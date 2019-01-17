@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@drawable/tutorial_screen_bg">
+
+    <TextView
+        style="@style/TextRegular"
+        android:layout_height="@dimen/size120"
+        android:layout_marginTop="@dimen/size40"
+        android:text="@string/showcase_your_travel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text15" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/first_gif_img"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tutorial_first_gif_img" />
+
+</RelativeLayout>

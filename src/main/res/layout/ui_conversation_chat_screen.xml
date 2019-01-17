@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_group_chat_root"
+    style="@style/LayoutMatch"
+    android:background="@color/chat_header_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size2"
+        android:layout_above="@id/layout_group_chat_chatbox"
+        android:background="@color/app_border" />
+
+
+    <RelativeLayout
+        android:id="@+id/user_info_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@drawable/white_transparent_gradient"
+        >
+
+        <ImageView
+            android:id="@+id/header_left_first_img"
+            android:layout_width="@dimen/size20"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/size5"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/down_arrow"
+            android:rotation="90"/>
+
+
+        <RelativeLayout
+            android:id="@+id/header_img_lay"
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:layout_marginStart="@dimen/size100"
+            android:layout_toRightOf="@id/header_left_first_img"
+            >
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size2"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:elevation="@dimen/size3"
+                android:src="@drawable/profile_bg"
+                tools:targetApi="lollipop" />
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size3"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:elevation="@dimen/size3"
+                tools:targetApi="lollipop" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name_txt"
+            style="@style/TextBold"
+            android:layout_below="@+id/header_img_lay"
+            android:textSize="@dimen/text10" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/border_line_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size1"
+        android:layout_below="@+id/user_info_lay"
+        android:background="@color/app_border" />
+
+    <LinearLayout
+        android:id="@+id/chat_list_lay"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/layout_group_chat_chatbox"
+        android:layout_below="@+id/border_line_view"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_group_chat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/size4"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/layout_group_chat_current_event"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size35"
+            android:layout_marginEnd="@dimen/size16"
+            android:layout_marginStart="@dimen/size16">
+
+            <TextView
+                android:id="@+id/text_group_chat_current_event"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_group_chat_chatbox"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size35"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:minHeight="@dimen/size30"
+        android:orientation="horizontal"
+        android:padding="@dimen/size3">
+
+        <ImageView
+            android:id="@+id/button_group_chat_upload"
+            android:layout_width="@dimen/size35"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            app:srcCompat="@drawable/camera_gray" />
+
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_toEndOf="@+id/button_group_chat_upload"
+            android:background="@drawable/chat_edit_bg">
+
+
+            <EditText
+                android:id="@+id/edittext_group_chat_message"
+                style="@style/EditTextBold"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/size16"
+                android:layout_marginStart="@dimen/size16"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_message"
+                android:maxLines="6"
+                tools:ignore="TextFields" />
+
+            <ImageView
+                android:id="@+id/button_group_chat_send"
+                android:layout_width="@dimen/size25"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/size5"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/circle_next_icon" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

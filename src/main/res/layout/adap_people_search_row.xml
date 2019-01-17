@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:id="@+id/parent_lay"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap"
+        android:padding="@dimen/size5">
+
+        <RelativeLayout
+            android:id="@+id/user_img_lay"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60"
+            android:padding="@dimen/size5">
+
+
+            <com.ouam.app.utils.RoundedImageView
+                style="@style/LayoutMatch"
+                android:background="@drawable/profile_bg" />
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:layout_toStartOf="@+id/right_arrow_img"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/size8"
+            android:paddingEnd="0dp">
+
+
+            <TextView
+                android:id="@+id/user_name_txt"
+                style="@style/TextBold"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textSize="@dimen/text10" />
+
+
+            <TextView
+                android:id="@+id/locatin_txt"
+                style="@style/TextMedium"
+                android:gravity="start"
+                android:textSize="@dimen/text8" />
+
+            <Button
+                android:id="@+id/follow_btn"
+                style="@style/ButtonBold"
+                android:layout_width="@dimen/size60"
+                android:layout_height="@dimen/size20"
+                android:layout_marginTop="@dimen/size6"
+                android:background="@drawable/follow_btn"
+                android:textColor="@color/followed_bg_end_color"
+                android:textSize="@dimen/text9" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/right_arrow_img"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="@dimen/size5"
+            android:paddingEnd="0dp"
+            android:paddingStart="@dimen/size5"
+            android:paddingTop="@dimen/size5"
+            android:src="@drawable/right_icon"
+            android:textSize="@dimen/text10"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/app_border" />
+
+
+</LinearLayout>

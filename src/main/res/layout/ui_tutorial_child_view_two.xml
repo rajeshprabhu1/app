@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@drawable/tutorial_screen_two_bg"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextRegular"
+        android:layout_height="@dimen/size120"
+        android:layout_marginTop="@dimen/size40"
+        android:text="@string/build_your_brand"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text15" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/second_gif_img"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/size30"
+        android:src="@drawable/tutorial_second_gif_img" />
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LayoutMatch"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_color">
+
+    <RelativeLayout
+        android:id="@+id/recent_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/recent_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:background="@color/dark_blue">
+
+
+            <TextView
+                android:id="@+id/recent_txt"
+                style="@style/TextRegular"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:text="@string/recent"
+                android:textSize="@dimen/text9"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/recent_marker_lay"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/recent_inner_lay"
+            android:visibility="visible"
+            android:background="@drawable/down_icon"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/been_there_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/been_there_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:background="@drawable/app_blue_color_with_border_bg">
+
+            <ImageView
+                android:id="@+id/been_there_img"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:contentDescription="@string/app_name"
+              />
+
+            <TextView
+                android:id="@+id/been_there_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="0dp"
+                android:textSize="@dimen/text9"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/been_there_marker_lay"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/been_there_inner_lay"
+            android:visibility="gone"
+            android:background="@drawable/down_icon"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/to_been_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/to_been_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:background="@drawable/app_blue_color_with_border_bg">
+
+            <ImageView
+                android:id="@+id/to_been_img"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:contentDescription="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/to_been_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="0dp"
+                android:textSize="@dimen/text9"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/to_been_marker_lay"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/to_been_inner_lay"
+            android:visibility="gone"
+            android:background="@drawable/down_icon"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hidden_gem_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/hidden_gem_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:background="@drawable/app_blue_color_with_border_bg">
+
+            <ImageView
+                android:id="@+id/hidden_gem_img"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:contentDescription="@string/app_name"
+              />
+
+            <TextView
+                android:id="@+id/hidden_gem_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="0dp"
+                android:textSize="@dimen/text9"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/hidden_gem_marker_lay"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/hidden_gem_inner_lay"
+            android:visibility="gone"
+            android:background="@drawable/down_icon"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/following_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/following_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:background="@drawable/app_blue_color_with_border_bg">
+
+            <ImageView
+                android:id="@+id/following_img"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:contentDescription="@string/app_name"
+             />
+
+            <TextView
+                android:id="@+id/following_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="0dp"
+                android:textSize="@dimen/text9"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/following_marker_lay"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/following_inner_lay"
+            android:visibility="gone"
+            android:background="@drawable/down_icon"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/follower_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/follower_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:background="@drawable/app_blue_color_with_border_bg">
+
+            <ImageView
+                android:id="@+id/follower_img"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:contentDescription="@string/app_name"
+               />
+
+            <TextView
+                android:id="@+id/follower_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="0dp"
+                android:textSize="@dimen/text9"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/follower_marker_lay"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/follower_inner_lay"
+            android:visibility="gone"
+            android:background="@drawable/down_icon"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"/>
+    </RelativeLayout>
+
+</LinearLayout>

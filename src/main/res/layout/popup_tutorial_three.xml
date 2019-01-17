@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:layout_gravity="center"
+    android:background="@color/popup_preview_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/size10"
+    android:paddingStart="@dimen/size10">
+
+    <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size5"
+            android:src="@drawable/main_floating" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/master_pin"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/master_pin_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/dis_covert_floating" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/discovered"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/discovered_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/un_dis_cover_floating" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/undiscovered"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/undiscovered_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/hidden_gems_floating" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/hidden_gems"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/hidden_gems_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

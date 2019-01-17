@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/size2"
+    android:paddingTop="@dimen/size2">
+
+
+    <TextView
+        style="@style/TextBold"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_toStartOf="@+id/retry_btn"
+        android:gravity="start"
+        android:text="@string/no_internet"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text12" />
+
+    <Button
+        android:id="@+id/retry_btn"
+        style="@style/LayoutWrap"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/retry"
+        android:textAllCaps="false"
+        android:textColor="@color/fb_blue"
+        android:textSize="@dimen/text12" />
+</RelativeLayout>
+
+

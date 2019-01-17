@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/popup_preview_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/LayoutMatch"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selfie_graphic" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextRegular"
+        android:layout_height="0dip"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:layout_weight="1"
+        android:text="@string/popup_text"
+        android:textSize="@dimen/text12"
+        android:textColor="@color/popup_txt" />
+
+</LinearLayout>

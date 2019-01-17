@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comments_likes_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_header_view" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/user_img_lay"
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size65"
+            android:padding="@dimen/size5">
+
+            <com.ouam.app.utils.RoundedImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size7"
+                android:src="@color/black" />
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size9" />
+
+            <ImageView
+                android:id="@+id/edit_profile_img"
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size9"
+                android:src="@drawable/camera_post_feed_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name_txt"
+            style="@style/TextBold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:layout_toStartOf="@+id/adap_dtl_feed_hrs_txt"
+            android:gravity="start"
+            android:paddingBottom="@dimen/size3"
+            android:paddingEnd="@dimen/size2"
+            android:paddingStart="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:textSize="@dimen/text9" />
+
+        <TextView
+            android:id="@+id/adap_dtl_feed_hrs_txt"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/size4"
+            android:paddingEnd="@dimen/size15"
+            android:paddingStart="@dimen/size5"
+            android:paddingTop="@dimen/size10"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/text7" />
+
+        <LinearLayout
+            android:id="@+id/comments_likes_pic_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_below="@+id/user_name_txt"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/size10"
+            android:paddingStart="@dimen/size10">
+
+            <HorizontalScrollView
+                style="@style/LayoutMatch"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/horizontal_linear_lay"
+                    style="@style/LayoutWrap"
+                    android:orientation="horizontal" />
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/post_comment_txt"
+                style="@style/TextMedium"
+                android:gravity="start"
+                android:paddingBottom="@dimen/size3"
+                android:paddingTop="@dimen/size3"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/text9" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/comments_likes_screen_tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@null"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabTextColor="@color/white"
+        tools:targetApi="lollipop" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/comments_likes_screen_pager"
+        style="@style/LayoutMatch"
+        android:background="@color/white" />
+</LinearLayout>

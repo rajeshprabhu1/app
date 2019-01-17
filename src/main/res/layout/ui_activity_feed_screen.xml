@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout style="@style/LayoutMatch">
+
+        <RelativeLayout style="@style/LayoutMatch">
+
+            <fragment
+                android:id="@+id/map"
+                style="@style/LayoutMatch"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+
+            <RelativeLayout
+                android:id="@+id/home_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="visible">
+
+                <include layout="@layout/ui_header_search_view" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/radial_menu_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/ui_radial_menu_view" />
+        </RelativeLayout>
+
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/feed_discrete_scroll_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size15"
+            app:dsv_orientation="horizontal" />
+
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/place_sug_discrete_scroll_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/size80"
+            app:dsv_orientation="horizontal" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

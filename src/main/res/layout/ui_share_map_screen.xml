@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/share_map_par_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/share_map_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@drawable/header_bg"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_header_new_view" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size1"
+        android:background="@color/app_border" />
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWei">
+
+
+
+        <ImageView
+            android:id="@+id/share_map_img"
+            style="@style/LayoutMatch"
+            android:layout_above="@+id/share_map_pin_lay"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="@dimen/size100"
+            android:layout_height="@dimen/size30"
+            android:layout_above="@+id/share_map_pin_lay"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/undiscover_text" />
+
+
+        <LinearLayout
+            android:id="@+id/share_map_pin_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/size3">
+
+                <LinearLayout
+                    android:id="@+id/been_there_lay"
+                    style="@style/LayoutWrap"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/discovered_map_pin" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size60"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/place_type_discovered" />
+
+                    <TextView
+                        android:id="@+id/been_there_txt"
+                        style="@style/TextBold"
+                        android:gravity="center"
+                        android:padding="@dimen/size2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text6" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/size3">
+
+                <LinearLayout
+                    android:id="@+id/to_be_explore_lay"
+                    style="@style/LayoutWrap"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/undiscovered_map_pin" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size80"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/place_type_un_discovered" />
+
+                    <TextView
+                        android:id="@+id/to_be_explore_txt"
+                        style="@style/TextBold"
+                        android:gravity="center"
+                        android:padding="@dimen/size2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text6" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/size3">
+
+                <LinearLayout
+                    android:id="@+id/hidden_gem_lay"
+                    style="@style/LayoutWrap"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/hidden_map_pin" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size60"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/place_type_hidden_gem" />
+
+                    <TextView
+                        android:id="@+id/hidden_gem_txt"
+                        style="@style/TextBold"
+                        android:gravity="center"
+                        android:padding="@dimen/size2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text6" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:background="@color/white">
+
+
+        <Button
+            android:id="@+id/share_map_btn"
+            style="@style/ButtonBold"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/size50"
+            android:layout_marginStart="@dimen/size50"
+            android:text="@string/share_your_map"
+            android:textSize="@dimen/size12" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/hidden_gem_bg_end_color"
+                android:startColor="@color/hidden_gem_bg_start_color" />
+            <corners android:radius="@dimen/size25" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/size2"
+        android:left="@dimen/size2"
+        android:right="@dimen/size2"
+        android:top="@dimen/size2">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="@dimen/size25" />
+            <solid android:color="@color/white" />
+
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    style="@style/LayoutMatch">
+
+
+    <com.ouam.app.utils.TouchImageView
+        android:id="@+id/image"
+        style="@style/LayoutWrap"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="@dimen/size30"
+        android:layout_height="@dimen/size30"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/size10"
+        android:contentDescription="@drawable/close_icon"
+        android:src="@drawable/close_white_icon" />
+</FrameLayout>

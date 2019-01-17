@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:layout_gravity="center"
+    android:background="@color/popup_preview_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/size10"
+    android:paddingStart="@dimen/size10">
+
+    <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size5"
+                android:src="@drawable/profile_bg" />
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/size6"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+        <!--<ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/chat_icon" />-->
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/your_profile"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/your_profile_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/chat_icon" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/ask_a_question"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/ask_a_question_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/camera" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/camera"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/camera_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10">
+
+        <ImageView
+            android:layout_width="@dimen/size45"
+            android:layout_height="@dimen/size45"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/feed" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBold"
+                android:gravity="start"
+                android:text="@string/news_feed"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:gravity="start"
+                android:text="@string/news_feed_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

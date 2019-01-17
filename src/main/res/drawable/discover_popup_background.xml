@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/discovered_bg_end_color"
+                android:startColor="@color/discovered_bg_start_color" />
+            <corners android:radius="@dimen/size10" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/size2"
+        android:left="@dimen/size2"
+        android:right="@dimen/size2"
+        android:top="@dimen/size2">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="@dimen/size10" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="@color/popup_pin_background"
+                android:centerColor="@color/popup_pin_background"
+                android:startColor="@color/white" />
+
+        </shape>
+    </item>
+</layer-list>

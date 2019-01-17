@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notification_top_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <RelativeLayout
+            android:id="@+id/user_online_lay"
+            style="@style/LayoutWrap"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_marginTop="@dimen/size18">
+
+            <com.ouam.app.utils.RoundedImageView
+                style="@style/LayoutMatch"
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size10"
+                android:layout_margin="@dimen/size4"
+                android:src="@color/discovered_bg_start_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_img_lay"
+            android:layout_width="@dimen/size55"
+            android:layout_height="@dimen/size55"
+            android:layout_marginStart="@dimen/size1"
+            android:layout_marginTop="@dimen/size1"
+            android:layout_toEndOf="@id/user_online_lay">
+
+            <RelativeLayout
+                style="@style/LayoutWrap"
+                android:layout_marginEnd="@dimen/size5">
+
+
+                <ImageView
+                    style="@style/LayoutMatch"
+                    android:layout_margin="@dimen/size2"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/profile_bg" />
+
+                <com.ouam.app.utils.RoundedImageView
+                    android:id="@+id/user_img"
+                    style="@style/LayoutMatch"
+                    android:layout_margin="@dimen/size3"
+                    android:src="@drawable/user_demo_icon" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/edit_profile_img"-->
+                <!--android:layout_width="@dimen/size15"-->
+                <!--android:layout_height="@dimen/size15"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingEnd="0dp"-->
+                <!--android:paddingStart="@dimen/size5"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:visibility="gone"-->
+                <!--android:src="@drawable/heart_red_color_icon" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:layout_toStartOf="@+id/notification_hrs_txt"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/size5"
+            android:paddingStart="@dimen/size5">
+
+            <TextView
+                android:id="@+id/notify_user_name"
+                style="@style/TextBold"
+                android:gravity="start"
+                android:padding="@dimen/size1"
+                android:textSize="@dimen/text9" />
+
+            <TextView
+                android:id="@+id/notify_message"
+                style="@style/TextBold"
+                android:gravity="start"
+                android:padding="@dimen/size1"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/size9" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notification_hrs_txt"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size15"
+            android:gravity="end"
+            android:paddingStart="0dp"
+            android:paddingTop="@dimen/size10"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size7" />
+
+        <ImageView
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/notification_hrs_txt"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginTop="@dimen/size10"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="@dimen/size5"
+            android:paddingEnd="0dp"
+            android:paddingStart="@dimen/size5"
+            android:paddingTop="@dimen/size5"
+            android:rotation="-90"
+            android:src="@drawable/down_arrow"
+            android:textSize="@dimen/text10" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.5"
+        android:layout_below="@+id/notification_top_lay"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@color/app_border" />
+
+</RelativeLayout>

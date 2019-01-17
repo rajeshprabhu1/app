@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="app_color">#DAE1E9</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#525252</color>
+
+
+    <color name="un_selected_dot">#D6D6D6</color>
+    <color name="selected_dot">#DE1166</color>
+
+    <color name="fb_blue">#3B589E</color>
+    <color name="fb_blue_light">#4F79EE</color>
+    <color name="fb_border">#2C3C70</color>
+
+
+    <color name="green">#6CC073</color>
+    <color name="green_light">#4D8953</color>
+    <color name="green_border">#4D8953</color>
+
+    <color name="google_blue">#4385F5</color>
+    <color name="google_border">#2B3F72</color>
+    <color name="google_blue_light">#4E8CC9</color>
+
+    <color name="edt_blue">#4F8DCA</color>
+    <color name="blue">#3B589E</color>
+
+    <color name="clusterblue">#1F2F4B</color>
+
+    <color name="light_gray">#717171</color>
+    <color name="rose">#FF4F52</color>
+    <color name="notification_circle">#D75251</color>
+    <color name="light_app_color">#E6EFF6</color>
+    <color name="light_app_color_transparent">#80E6EFF6</color>
+    <color name="app_color_transparent">#99DAE1E9</color>
+    <color name="popup_preview_background">#F7F8FA</color>
+    <color name="popup_pin_background">#EFEFEF</color>
+    <color name="popup_pin_blue">#108496</color>
+
+
+    <color name="red">#FD5054</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="dark_blue">#20304A</color>
+    <!--<color name="app_border">#BFC3C6</color>-->
+    <color name="app_border">#C2C2C2</color>
+    <color name="white_transparent">#95FFFFFF</color>
+    <color name="white_bottom_transparent">#99ffffff</color>
+    <color name="gray_btn_clr">#9F9E9C</color>
+
+    <color name="blue_light_clr">#2E538B</color>
+    <color name="blue_btn_clr">#33367C</color>
+    <color name="blue_border_clr">#233587</color>
+    <color name="blue_dark_clr">#1F2E4F</color>
+
+    <color name="accent_been_there_red">#d63939</color>
+    <color name="accent_explore_blue">#39529c</color>
+    <color name="accent_hidden_gem_violet">#83429b</color>
+
+    <color name="been_there_red">#fc5152</color>
+    <color name="explore_blue">#508ffe</color>
+    <color name="hidden_violet">#9663a8</color>
+
+    <color name="common_circle_color">#002C55</color>
+
+    <color name="light_gray_border">#E6E6E6</color>
+
+    <color name="search_solid_color">#eaf0f5</color>
+    <!--chat color-->
+    <color name="groupChatDateText">#ffffff</color>
+    <color name="groupChatDateBackground">#C0C0C0</color>
+    <color name="groupChatBubbleMe">#774df2</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatReadReceiptMe">#1fcc94</color>
+    <color name="groupChatReadReceiptOther">#00BCD4</color>
+
+    <color name="chat_bubble_me">#255378</color>
+    <color name="chat_bubble_receiver">#D3D3D3</color>
+    <color name="bg_row_background">#fa315b</color>
+
+    <!--V2-->
+    <color name="ping">#E4235B</color>
+    <color name="ping_dark">#C72456</color>
+    
+    <color name="get_start_profile_bg_start_color">#00ABE3</color>
+    <color name="get_start_profile_bg_end_color">#235277</color>
+
+    <color name="header_txt">#828282</color>
+
+    <color name="gray_light">#8F8E94</color>
+    <color name="popup_txt">#262628</color>
+    <color name="header_start">#D80672</color>
+    <color name="header_center">#F04939</color>
+    <color name="header_end">#F68C52</color>
+
+    <color name="profile_bg_start_color">#D60376</color>
+    <color name="profile_bg_end_color">#FCD173</color>
+
+    <color name="discovered_bg_start_color">#0A6C70</color>
+    <color name="discovered_bg_end_color">#169EC0</color>
+    <color name="hidden_gem_bg_start_color">#DC0D6A</color>
+    <color name="hidden_gem_bg_end_color">#F04A38</color>
+    <color name="un_discovered_bg_start_color">#204766</color>
+    <color name="un_discovered_bg_end_color">#3679B1</color>
+    <color name="icon_back">#1493B7</color>
+
+    <color name="tut_third_bg_start_color">#189BC6</color>
+    <color name="tut_third_bg_end_color">#067A8C</color>
+
+    <color name="followed_bg_start_color">#FCCF72</color>
+    <color name="followed_bg_end_color">#DA096F</color>
+
+    <color name="local_scout_bg_start_color">#02A8E0</color>
+    <color name="local_scout_bg_end_color">#235277</color>
+
+    <color name="globetrotter_bg_start_color">#51A2FD</color>
+    <color name="globetrotter_bg_end_color">#06F8D1</color>
+
+    <color name="undiscover_hero_bg_start_color">#DA0A6F</color>
+    <color name="undiscover_hero_bg_end_color">#FAB465</color>
+
+    <color name="offline_bg_start_color">#437191</color>
+    <color name="offline_bg_end_color">#F7F8FA</color>
+
+    <color name="lost_nomad_bg_color">#B0B0B0</color>
+
+    <color name="chat_header_bg">#F8F8F8</color>
+
+    <color name="place_txt_color">#6F9DB5</color>
+
+
+
+</resources>

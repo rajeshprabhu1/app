@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/marker_img_lay"
+    style="@style/LayoutWrap">
+
+    <RelativeLayout
+        android:layout_width="@dimen/size65"
+        android:layout_height="@dimen/size65"
+        android:padding="@dimen/size10">
+
+        <RelativeLayout
+            android:id="@+id/marker_click_over_lay"
+            android:visibility="gone"
+            style="@style/LayoutMatch">
+
+            <ImageView
+                android:id="@+id/marker_click_over_lay_bg_img"
+                style="@style/LayoutMatch"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size1"
+                android:padding="@dimen/size0.5"
+                android:adjustViewBounds="true"
+                android:src="@drawable/profile_white_bg"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/marker_user_bg_img"
+            style="@style/LayoutMatch"
+            android:layout_margin="@dimen/size3"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name" />
+
+
+        <com.ouam.app.utils.RoundedImageView
+            android:id="@+id/marker_user_img"
+            style="@style/LayoutMatch"
+            android:layout_margin="@dimen/size3" />
+    </RelativeLayout>
+
+
+</LinearLayout>

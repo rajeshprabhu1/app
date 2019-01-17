@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:layout_marginBottom="@dimen/size80"
+    android:layout_marginEnd="@dimen/size20"
+    android:layout_marginStart="@dimen/size20"
+    app:cardCornerRadius="@dimen/size10"
+    app:cardBackgroundColor="@color/transparent"
+    android:background="@color/transparent"
+    android:layout_marginTop="@dimen/size80">
+
+    <RelativeLayout style="@style/LayoutMatch">
+
+
+        <LinearLayout
+            android:id="@+id/add_pin_lay"
+            style="@style/LayoutMatch"
+            android:background="@drawable/rounded_online_been_there_bg"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/size10"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <ImageView
+                        android:id="@+id/back_img"
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_alignParentStart="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="180"
+                        android:src="@drawable/right_icon"
+                        android:tint="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/type1_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/discovered_map_pin" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/add_pin_lay_title_txt"
+                    style="@style/TextBold"
+                    android:text="@string/discovered"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:id="@+id/location_pin1_txt"
+                    style="@style/TextBold"
+                    android:text="@string/location_txt"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+
+            <!--<View-->
+            <!--style="@style/LayoutWidMatch_HeiWrap"-->
+            <!--android:layout_height="@dimen/size0.5"-->
+            <!--android:background="@color/light_gray" />-->
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size2"
+                android:layout_marginStart="@dimen/size2"
+                android:background="@color/popup_pin_background"
+                android:padding="@dimen/size10">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/view_lay"
+                    android:layout_width="@dimen/size50"
+                    android:layout_height="@dimen/size50"
+                    android:layout_margin="@dimen/size5"
+                    app:cardCornerRadius="@dimen/size5">
+
+                    <ImageView
+                        android:id="@+id/location_img"
+                        style="@style/LayoutMatch"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/demo_img"
+                        android:visibility="visible" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/top_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size9"
+                    android:layout_toEndOf="@+id/view_lay"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                        <TextView
+                            android:id="@+id/place_name_txt"
+                            style="@style/TextBold"
+                            android:layout_width="match_parent"
+                            android:layout_toStartOf="@+id/place_type_txt"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/size3"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text10" />
+
+                        <TextView
+                            android:id="@+id/place_type_txt"
+                            style="@style/TextRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/size3"
+                            android:paddingStart="@dimen/size3"
+                            android:paddingTop="@dimen/size3"
+                            android:textAllCaps="true"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text6" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/place_location_name_txt"
+                        style="@style/TextMedium"
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/text10" />
+                </LinearLayout>
+
+                <!--<ImageView-->
+                <!--android:id="@+id/select_pin_type_img"-->
+                <!--android:layout_width="@dimen/size20"-->
+                <!--android:layout_height="@dimen/size20"-->
+                <!--android:layout_alignBottom="@+id/location_img"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_below="@id/top_lay"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:padding="@dimen/size2"-->
+                <!--android:src="@drawable/check_icon" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size2"
+                android:layout_marginStart="@dimen/size2"
+                android:background="@color/popup_pin_background">
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size1"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@color/app_border" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/pin_post_edt"
+                style="@style/EditTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size85"
+                android:layout_marginEnd="@dimen/size2"
+                android:layout_marginStart="@dimen/size2"
+                android:background="@color/popup_pin_background"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/post_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoCorrect"
+                android:padding="@dimen/size5"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text10" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size3"
+                android:layout_marginEnd="@dimen/size2"
+                android:layout_marginStart="@dimen/size2"
+                android:background="@color/popup_pin_background"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/camera_icon_lay"
+                    style="@style/LayoutWrap"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/post_upload_frst_img_lay"
+                        android:layout_width="@dimen/size60"
+                        android:layout_height="@dimen/size50"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size5"
+                            android:background="@color/dark_blue"
+                            android:padding="@dimen/size1">
+
+                            <ImageView
+                                android:id="@+id/post_upload_frst_img"
+                                style="@style/LayoutMatch"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_alignParentEnd="true">
+
+                            <com.ouam.app.utils.RoundedImageView
+                                style="@style/LayoutMatch"
+                                android:layout_centerInParent="true"
+                                android:src="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/post_frst_photo_close_img"
+                                style="@style/LayoutMatch"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/close_icon" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/capture_photo_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/size10"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size3"
+                        android:src="@drawable/camera" />
+
+                    <ImageView
+                        android:id="@+id/add_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size2"
+                        android:src="@drawable/plus_gray_icon"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/image_count_txt"
+                        style="@style/TextMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/size3"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/text12"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_post_btn"
+                    style="@style/ButtonBold"
+                    android:layout_width="@dimen/size100"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/size7"
+                    android:paddingBottom="@dimen/size7"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/round_back_white"
+                    android:text="@string/post_it"
+                    android:textColor="@color/popup_pin_blue"
+                    android:textSize="@dimen/text11" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/pin_type_img"-->
+    <!--android:layout_width="@dimen/size50"-->
+    <!--android:layout_height="@dimen/size45"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--android:src="@drawable/hidden_gem_icon" />-->
+</android.support.v7.widget.CardView>

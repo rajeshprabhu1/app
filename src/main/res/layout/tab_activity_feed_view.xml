@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_par_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+
+        <RelativeLayout
+            android:id="@+id/activity_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:background="@color/dark_blue">
+
+            <TextView
+                android:id="@+id/activity_txt"
+                style="@style/TextRegular"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/size5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_marker_lay"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"
+            android:layout_below="@+id/activity_inner_lay"
+            android:layout_centerInParent="true"
+            android:background="@drawable/down_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details_par_lay"
+        style="@style/LayoutWidMatch_HeiWei">
+
+        <RelativeLayout
+            android:id="@+id/details_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:background="@drawable/app_blue_color_with_border_bg">
+
+            <TextView
+                android:id="@+id/details_txt"
+                style="@style/TextRegular"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/size3"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_marker_lay"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size10"
+            android:layout_below="@+id/details_inner_lay"
+            android:layout_centerInParent="true"
+            android:background="@drawable/down_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<resources>
+    <string name="app_name">Undiscover</string>
+
+    <!--Google-->
+    <!--initial credentials-->
+    <!--our.app.sandbox@gmail.com-->
+    <!--password: IknaFetCoomyay2-->
+
+
+    <!--Google-->
+    <!--current credentials-->
+    <!--iroamapp@gmail.com-->
+    <!--password: Developer1!!-->
+
+    <!--Facebook-->
+    <!--josechristy@smaatapps.com-->
+    <!--password: Smaat123$-->
+
+    <string name="user_cancelled">User cancelled image capture</string>
+    <string name="sorry_failed_img">Sorry! Failed to capture image</string>
+    <string name="cancel">Cancel</string>
+    <string name="picture">Picture</string>
+    <string name="select_photo">Upload Photo</string>
+    <string name="take_photo">From your camera</string>
+    <string name="choose_pic">Choose Picture</string>
+    <string name="choose_existing_photo">From your photo library</string>
+
+    <!--Server alert-->
+    <string name="connect_time_out">Connection to Undiscover App Server timeout, please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+    <string name="retry">Retry</string>
+    <string name="no_values_to_show">No values to show</string>
+
+    <!--Dialog alert-->
+    <string name="no_email_id_fb">Sorry, you do not have email id in your facebook account. Please try with different account, that has email id.</string>
+    <string name="please_enter_password">Please enter a password</string>
+    <string name="please_enter_message">Please enter a message</string>
+    <string name="go_settings_per">Go to settings and enable permissions</string>
+    <string name="exists_error">Sorry,Username already exists,Please try with some other name</string>
+    <string name="enter_user_name">Please enter UserName</string>
+    <string name="enter_location">Please enter HomeCity</string>
+    <string name="plz_agree_terms_cond">Please agree the Terms and Conditions</string>
+    <string name="enter_comments">Please enter comments</string>
+    <string name="exit_msg">Are you sure want to Exit?</string>
+    <string name="sure_want_to_logout">Are you sure want to logout?</string>
+    <string name="tag_your_location">Been There / Done That</string>
+    <string name="tag_to_be_explore">To Be Explore / Done That</string>
+    <string name="tag_hidden_gems">Hidden Gems / Done That</string>
+    <string name="place_near_your_curr_loc">PLACES NEAR YOUR PIN</string>
+    <string name="add_custom_place_at_curr_loc">NOT ONE OF THESE?\nSEARCH FOR THE PLACE BY NAME</string>
+    <string name="enter_place_name">Please enter PlaceName</string>
+    <string name="search_for_place_by_name">Search for places by name</string>
+    <string name="search_for_place">Search for places</string>
+
+    <!--Play service-->
+    <string name="play_service_err">Google Play Services Error</string>
+    <string name="device_not_support">This device is not supported for required Google Play Services. Please update your Google Play Services</string>
+    <string name="user_not_update"> User does not update location setting</string>
+
+    <!--Toast string-->
+    <string name="google_unauthenticated">Google Unauthenticated</string>
+
+    <!--Dialog-->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="post_it">POST IT</string>
+    <string name="post_hint">Help other travellers by telling Undiscover \nsomething interesting about or posting\n a photo of </string>
+
+    <!--facebook id-->
+    <!--<string name="facebook_app_id">2006155723041234</string>-->
+    <string name="facebook_app_id">592949834374489</string>
+    <!--google map id-->
+    <string name="google_map_id">AIzaSyBBtYxStG3WmwKjmwxP8ZMg0qCEV4i99Y8</string>
+    <string name="google_client_id">1097194285465-bd2k0ctnm0152rctglt683i3jpb289tn.apps.googleusercontent.com</string>
+
+    <!--Old one-->
+    <!--<string name="google_map_id">AIzaSyCkXEFdwks1Tm_JZQEtbHzJQ2OJK8jQCRY</string>-->
+    <!--<string name="server_client_id">1097194285465-ds56f9qo2vj6r8i97s21og8c0b2os4sf.apps.googleusercontent.com</string>-->
+    <!--<string name="google_client_id">1097194285465-0ah22u55lusn08dr87kbn4hfuseo2bpv.apps.googleusercontent.com</string>-->
+
+    <!--Tutorial screen-->
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="skip"><u>skip</u></string>
+    <string name="showcase_your_travel">Showcase your travel roadmap \nand connect with locals</string>
+    <string name="build_your_brand">Build your brand and share culture \nto make money</string>
+    <string name="been_there">Been There \nDone That</string>
+    <string name="to_be_explore">To Be \nExplored</string>
+    <string name="my_hidden_gems">Hidden \nGems</string>
+    <string name="connect_with_interest">Connect with interesting people \nand find new travel companions</string>
+    <string name="check_off_bucket">Discover your next adventure and \ntake the path less travelled.</string>
+    <string name="follow_old_and_new_friends">Follow Old\n &amp; New Friends</string>
+    <string name="chat_and_ask">Chat &amp; \n Ask Questions</string>
+
+    <!--Facebook login-->
+    <string name="fb_image_url">http://graph.facebook.com/</string>
+    <string name="fb_concat_image">/picture?type=large</string>
+
+    <!--Get started screen-->
+    <string name="get_introduced">Get introduced to \nnew and amazing places.\n\nTravel Simplified.</string>
+    <string name="as_a_new_user">As a new user, please select a username \nthat will identify you when interacting \nwith other
+    travellers on Undiscover.</string>
+    <string name="user_name">User Name</string>
+    <string name="home_city">Home City</string>
+    <string name="get_start">Get started</string>
+    <string name="agree_terms_cond">I agree to the <u>terms and conditions</u></string>
+    <string name="let_Undiscover">Let\'s Undiscover!</string>
+    <string name="all_done">ALL DONE</string>
+    <string name="popup_text">We are social platform that connects passionate travelers with local and like minded adventurers.Our goal is to help you to create extraordinary experiences, share culture and make money.</string>
+
+    <string name="welcome_to">Welcome to Undiscover!</string>
+    <string name="search">Search</string>
+
+    <!--Setting -->
+    <string name="setting">Settings</string>
+    <string name="logout"><u>LOG OUT</u></string>
+    <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="about_undiscover">About Undiscover</string>
+    <string name="terms_cond">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="built_by">Built in Chicago by Red Foundry and iDesignify</string>
+
+    <!--Notification-->
+    <string name="notifications">Notifications</string>
+
+    <!--Offline pinning screen-->
+    <string name="type_been_there">1</string>
+    <string name="type_explore">2</string>
+    <string name="type_hidden_gem">3</string>
+
+    <string name="offline_been_there">BEEN THERE</string>
+    <string name="offline_explore">TO BE EXPLORED</string>
+    <string name="offline_hidden_gem">HIDDEN GEM</string>
+    <string name="offline_pins">Offline pins</string>
+    <string name="location_pinned">Location Pinned</string>
+    <string name="already_exist">Already Exist</string>
+    <string name="store_current_location">Store Current Location</string>
+    <string name="save">Save</string>
+    <string name="place_name">Place Name</string>
+
+    <!--Chat Screen-->
+    <string name="messages">Messages</string>
+    <string name="all_chat">All Chat</string>
+    <string name="new_message">New Message</string>
+
+
+    <!--offline pining-->
+    <string name="offline_pining">If you would like to pin your current\nlocation so you can tag it when\nyou have an internet connection, simply\ngive your gps coordinates a name.\n\n When you connect later you will be able \nto set your pin to a known places.</string>
+    <string name="select_pin_type">Please select pin type</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="online_txt">Now that you are online, you can resolve \neach of your stored locations to known palces</string>
+    <string name="stored_location">Stored Locations</string>
+    <string name="delete_comment">Are you sure you want to delete the comment ?</string>
+
+    <string name="pin_mode_txt">You pinned the above places\nwhile you were offline.\n\n Select each to tag them correctly</string>
+
+    <string name="offline_txt">While offline, storing your current loaction \ncoordinates will allow you to pin locations \nwhile you travel wihtout an internet connection. \n\n When you connect later you will be able \n to set your pin to a known place.</string>
+
+    <string name="delete">Delete</string>
+    <string name="succeeded">succeeded</string>
+
+    <string name="location_txt">37.7749 N, 122.4194 W</string>
+
+
+    <!--search screen-->
+    <string name="pin_custom_location">Pin Custom Location</string>
+
+
+    <string name="not_finding_place">Not finding the place you want,\nadd a custom pin.</string>
+    <!--Comments / likes screen-->
+    <string name="see_all_comments"><u>see all comments</u></string>
+    <string name="comments_likes">COMMENTS / LIKES</string>
+    <string name="offline_content">You are currently offline, until \n you connect to the internet you \n will have limited access to Undiscover, \n and will be able to store locations \n to later pin to your map.</string>
+    <string name="post_comments">Post a comment</string>
+
+    <string name="recent">RECENT</string>
+    <string name="add_this_place_to_map">ADD THIS PLACE TO YOUR MAP</string>
+    <string name="activity">ACTIVITY</string>
+    <string name="details">DETAILS</string>
+    <string name="trending_places">TRENDING PLACES</string>
+    <string name="post_about_photo">Post a photo, comment or question about </string>
+    <string name="pin_type_delete_msg">Are you sure you want to remove?</string>
+    <string name="posted_photos_for">posted photos for</string>
+
+    <string name="hidden_gem">HIDDEN GEM</string>
+    <string name="feed">FEED</string>
+
+    <!--from api return pin type-->
+    <string name="pin">pin</string>
+    <string name="post">post</string>
+    <string name="user_recent">Recent</string>
+    <string name="pinned"> pinned</string>
+    <string name="posted_photos"> posted on</string>
+
+    <string name="cities">CITIES</string>
+    <string name="people">PEOPLE</string>
+    <string name="places">PLACES</string>
+
+
+    <!--chat-->
+    <string name="group_channel_list_file_message_text">%1$s has uploaded a file.</string>
+    <string name="enter_message">Message</string>
+    <string name="resend_message">Resend</string>
+    <string name="delete_message">Delete</string>
+    <string name="extract_file_failed">Extracting file information failed.</string>
+    <string name="file_must_be_local_storage">File must be located in local storage.</string>
+    <string name="retry_txt">Retry?</string>
+    <string name="connection_required">Connection required to register push token.</string>
+
+    <!-- Message Status -->
+    <string name="message_sending">Sending</string>
+    <string name="message_failed">Failed</string>
+    <string name="edited">(edited)</string>
+    <string name="seen">Seen</string>
+
+    <string name="share_your_map">Share Your Map</string>
+    <string name="share_now">SHARE NOW</string>
+    <string name="loading">Loading.....</string>
+
+
+    <!--Track Screen Name-->
+    <string name="splash_screen">SplashScreen</string>
+    <string name="tutorila_screen">TutorialScreen</string>
+    <string name="get_started_screen">GetStarted Screen</string>
+    <string name="home_activity_screen">HomeScreen</string>
+    <string name="traveler_profile_screen">Traveler Profile Screen</string>
+    <string name="city_details_screen">City Details Screen</string>
+    <string name="place_details_screen">Place Details Screen</string>
+    <string name="chat_list_screen">ChatList Screen</string>
+    <string name="chat_conversation_screen">Chat Screen</string>
+    <string name="notification_screen">Notification Screen</string>
+    <string name="search_screen">Search Screen</string>
+    <string name="setting_screen">Settings Screen</string>
+    <string name="profile_edit_screen">Edit Profile Screen</string>
+    <string name="new_message_screen">New Message Screen</string>
+    <string name="comment_like_screen">Comments/Likes Screen</string>
+
+    <!--Tutorial Screen Name-->
+    <string name="your_profile">Your Profile</string>
+    <string name="your_profile_text">Access and share your map, view your pins, and configure settings</string>
+    <string name="ask_a_question">Ask a Question</string>
+    <string name="ask_a_question_text">Communicate with locals about locations and recommendations</string>
+    <string name="camera">Camera</string>
+    <string name="camera_text">Quickly take a picture to pin a location to your map</string>
+    <string name="news_feed">News Feed</string>
+    <string name="news_feed_text">Access the most recent activity of the travelers that you follow</string>
+    <string name="master_pin">Master Pin</string>
+    <string name="master_pin_text">This is your master pin, simply tap it to add a pin to any location</string>
+    <string name="discovered">Discovered</string>
+    <string name="discovered_text">Places I have been</string>
+    <string name="undiscovered">Undiscovered</string>
+    <string name="undiscovered_text">Places I want to go</string>
+    <string name="hidden_gems">Hidden Gems</string>
+    <string name="hidden_gems_text">Amazing spots off the beaten path</string>
+
+    <!--Home Screen-->
+    <string name="no_feed_list">No feed list to show </string>
+
+    <string name="sub_type_been_there">beenthere</string>
+    <string name="sub_type_to_be_explored">tobeexplored</string>
+    <string name="sub_type_hidden_gem">hiddengem</string>
+
+    <string name="comments">Comments</string>
+    <string name="comment">Comment</string>
+    <string name="likes">Likes</string>
+    <string name="like">Like</string>
+
+    <string name="follow">Follow</string>
+    <string name="pins">Pins</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+
+    <string name="lost_nomad">lost Nomad</string>
+    <string name="local_scout">Local Scout</string>
+    <string name="globetrotter">Globetrotter</string>
+    <string name="undiscover_hero">Undiscover Hero</string>
+
+    <string name="txt_35">+35</string>
+    <string name="login_to">Log in to get started</string>
+
+    <string name="similar_travelers">Similar travelers you might want to follow</string>
+    <string name="dismiss_notification"><u>dismiss notifications</u></string>
+    <string name="ask_ques">Ask me a question</string>
+
+    <string name="cong_plc">Congratulation! Now that you\'ve placed your first pin, it\'s time to seek advice.\nHere are some people that have been to the location you just pinned.</string>
+    <string name="based_on_pin">Based on your recent pins, here are some locals and travel expert.</string>
+
+
+</resources>

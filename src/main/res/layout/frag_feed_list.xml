@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent_lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWrap">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feed_discrete_scroll_view"
+        style="@style/LayoutMatch"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:id="@+id/no_values_txt"
+        style="@style/TextMedium"
+        android:layout_marginTop="@dimen/size9"
+        android:text="@string/no_values_to_show"
+        android:textSize="@dimen/text12"
+        android:visibility="visible" />
+</RelativeLayout>

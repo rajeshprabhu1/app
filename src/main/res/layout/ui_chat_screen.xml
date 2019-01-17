@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_par_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@drawable/header_bg"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_header_new_view" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size1"
+        android:background="@color/app_border" />
+
+    <RelativeLayout
+      style="@style/LayoutMatch">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        style="@style/LayoutMatch"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/no_values_txt"
+            style="@style/TextBold"
+            android:textSize="@dimen/text11"
+            android:text="@string/no_values_to_show"
+            android:textColor="@color/black"
+            android:padding="@dimen/size5"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

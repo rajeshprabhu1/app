@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <RelativeLayout
+            android:id="@+id/user_img_lay"
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size65"
+            android:padding="@dimen/size10">
+
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_bg_img"
+                style="@style/LayoutMatch"
+                android:background="@drawable/profile_bg" />
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size2"
+                android:src="@drawable/user_demo_icon" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/size5"
+            android:paddingStart="@dimen/size5">
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <TextView
+                    android:id="@+id/user_name_txt"
+                    style="@style/TextBold"
+                    android:layout_marginEnd="@dimen/size5"
+                    android:layout_toStartOf="@+id/hours_txt"
+                    android:gravity="start"
+                    android:textSize="@dimen/text10" />
+
+                <TextView
+                    android:id="@+id/hours_txt"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/text8" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <TextView
+                    android:id="@+id/address_txt"
+                    style="@style/TextBold"
+                    android:layout_toStartOf="@+id/right_arrow_img"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text10" />
+
+
+                <TextView
+                    android:id="@+id/travel_status_txt"
+                    style="@style/TextMedium"
+                    android:layout_below="@+id/address_txt"
+                    android:layout_toStartOf="@+id/right_arrow_img"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text10" />
+
+                <ImageView
+                    android:id="@+id/right_arrow_img"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingBottom="@dimen/size5"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:paddingTop="@dimen/size5"
+                    android:visibility="gone"
+                    android:src="@drawable/right_icon"
+                    android:textSize="@dimen/text10" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--style="@style/LayoutWidMatch_HeiWrap"-->
+        <!--android:layout_height="@dimen/size1"-->
+        <!--android:background="@color/app_border" />-->
+
+
+</LinearLayout>

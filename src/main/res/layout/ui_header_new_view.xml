@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_height="@dimen/size65">
+
+    <RelativeLayout
+        android:id="@+id/header_left_img_lay"
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size45"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/header_left_img"
+            style="@style/LayoutMatch"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="@dimen/size13"
+            android:paddingEnd="@dimen/size20"
+            android:paddingStart="@dimen/size6"
+            android:paddingTop="@dimen/size13"
+            android:src="@drawable/back_white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header_txt"
+        style="@style/TextBold"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/header_left_img_lay"
+        android:layout_toStartOf="@+id/header_right_img_lay"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text22"  />
+
+    <RelativeLayout
+        android:id="@+id/header_right_img_lay"
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size45"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/header_right_img"
+            style="@style/LayoutMatch"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:tint="@color/white"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size13"
+            android:src="@drawable/settings_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

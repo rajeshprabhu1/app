@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/place_details_par_lay"
+    style="@style/LayoutMatch">
+
+    <ScrollView style="@style/LayoutMatch">
+        <RelativeLayout
+            style="@style/LayoutMatch">
+
+            <TextView
+                android:id="@+id/no_values_txt"
+                style="@style/TextBold"
+                android:textSize="@dimen/text11"
+                android:text="@string/no_values_to_show"
+                android:textColor="@color/black"
+                android:padding="@dimen/size5"
+                android:visibility="visible"
+                android:layout_centerInParent="true"/>
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:padding="@dimen/size10"
+           android:layout_toStartOf="@+id/place_catagery_txt"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/place_details_name_txt"
+               style="@style/TextBold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/size3"/>
+            <TextView
+                android:id="@+id/place_details_address_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text11"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:padding="@dimen/size3"/>
+            <TextView
+                android:id="@+id/place_details_phone_num_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/blue_btn_clr"
+                android:layout_width="wrap_content"
+                android:inputType="phone"
+                android:textSize="@dimen/text12"
+                android:padding="@dimen/size3"
+                />
+            <TextView
+                android:id="@+id/place_details_web_site_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/blue_btn_clr"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text12"
+                android:padding="@dimen/size3"/>
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/place_catagery_txt"
+                style="@style/TextMedium"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/size10"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_marginTop="@dimen/size10"
+                android:textSize="@dimen/text12"
+                android:padding="@dimen/size3"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

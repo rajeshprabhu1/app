@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/city_detials_par_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="50">
+
+        <!--<com.wang.avi.AVLoadingIndicatorView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--style="@style/LayoutWrap"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:indicatorColor="@color/dark_blue"-->
+        <!--app:indicatorName="LineSpinFadeLoaderIndicator" />-->
+
+        <RelativeLayout
+            android:id="@+id/details_screen_view_pager_lay"
+            style="@style/LayoutMatch"
+            android:layout_below="@+id/details_header_lay"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@color/dark_blue"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/city_place_details_view_pager"
+                style="@style/LayoutMatch"
+                android:adjustViewBounds="true"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/page_indicator_view"
+                style="@style/LayoutWrap"
+                android:layout_alignBottom="@id/city_place_details_view_pager"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/size45"
+                android:padding="10dp"
+                app:piv_animationType="worm"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_padding="@dimen/size3"
+                app:piv_radius="@dimen/size4"
+                app:piv_selectedColor="@color/white"
+                app:piv_unselectedColor="@color/app_color_transparent"
+                app:piv_viewPager="@id/view_pager" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/place_img"
+            style="@style/LayoutMatch"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@color/dark_blue"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/details_header_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@drawable/header_bg">
+
+            <ImageView
+                android:id="@+id/down_img"
+                android:layout_width="@dimen/size25"
+                android:layout_height="@dimen/size25"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@drawable/back_white" />
+
+            <LinearLayout
+                style="@style/LayoutWrap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size8"
+                android:layout_toStartOf="@+id/top_pin_type_img"
+                android:layout_toEndOf="@+id/down_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/place_name_txt"
+                    style="@style/TextBold"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size15" />
+
+                <TextView
+                    android:id="@+id/place_location_txt"
+                    style="@style/TextMedium"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text12" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/top_pin_type_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/size15"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/placeinfoicon" />
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/city_details_tab_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@null"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/CustomTabText"
+            app:tabTextColor="@color/white"
+            tools:targetApi="lollipop" />
+
+        <RelativeLayout
+            android:id="@+id/radial_menu_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/ui_radial_menu_place_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size2"
+        android:layout_below="@+id/pin_lay"
+        android:background="@color/app_border" />
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <RelativeLayout
+                android:id="@+id/pin_lay"
+                style="@style/LayoutWrap"
+                android:layout_width="match_parent"
+                android:visibility="visible">
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/user_img_lay"-->
+                <!--android:layout_width="@dimen/size65"-->
+                <!--android:layout_height="@dimen/size65"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginStart="@dimen/size5"-->
+                <!--android:padding="@dimen/size5">-->
+
+                <!--<com.ouam.app.utils.RoundedImageView-->
+                <!--style="@style/LayoutMatch"-->
+                <!--android:layout_margin="@dimen/size5"-->
+                <!--android:src="@color/black" />-->
+
+
+                <!--<com.ouam.app.utils.RoundedImageView-->
+                <!--android:id="@+id/user_image"-->
+                <!--style="@style/LayoutMatch"-->
+                <!--android:layout_margin="@dimen/size7"-->
+                <!--android:src="@drawable/user_demo_icon" />-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/pin_type_img"-->
+                <!--android:layout_width="@dimen/size15"-->
+                <!--android:layout_height="@dimen/size15"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:contentDescription="@string/app_name" />-->
+                <!--</RelativeLayout>-->
+                <RelativeLayout
+                    android:id="@+id/user_img_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size55">
+
+                    <RelativeLayout
+                        android:id="@+id/user_img1_lay"
+                        style="@style/LayoutMatch"
+                        android:layout_width="@dimen/size55"
+                        android:layout_height="@dimen/size55"
+                        android:padding="@dimen/size5">
+
+                        <com.ouam.app.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size4"
+                            android:background="@drawable/profile_bg" />
+
+                        <com.ouam.app.utils.RoundedImageView
+                            android:id="@+id/user_img"
+                            style="@style/LayoutMatch"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/size6"
+                            android:clickable="false"  />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/user_img2_lay"
+                        android:layout_width="@dimen/size55"
+                        android:layout_height="@dimen/size55"
+                        android:layout_marginStart="@dimen/size27"
+                        android:padding="@dimen/size5">
+
+                        <com.ouam.app.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size4"
+                            android:background="@drawable/profile_bg" />
+
+                        <com.ouam.app.utils.RoundedImageView
+                            android:id="@+id/user_img1"
+                            style="@style/LayoutMatch"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/size6"
+                            android:clickable="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/user_img3_lay"
+                        android:layout_width="@dimen/size55"
+                        android:layout_height="@dimen/size55"
+                        android:layout_marginStart="@dimen/size55"
+                        android:padding="@dimen/size5">
+
+                        <com.ouam.app.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size4"
+                            android:background="@drawable/profile_bg" />
+
+                        <com.ouam.app.utils.RoundedImageView
+                            android:id="@+id/user_img2"
+                            style="@style/LayoutMatch"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/size6"
+                            android:clickable="false" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_count_txt"
+                    style="@style/TextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_alignBottom="@id/user_img_lay"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_toRightOf="@+id/user_img_lay"
+                    android:gravity="start"
+                    android:text="@string/txt_35"
+                    android:textSize="@dimen/size15" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size100"
+                    android:layout_toRightOf="@id/user_img_lay">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size55"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/ask_an_expert" />
+                </RelativeLayout>
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/post_img_lay"-->
+                <!--style="@style/LayoutWidMatch_HeiWrap"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginStart="@dimen/size15"-->
+                <!--android:layout_toEndOf="@+id/user_img_lay"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/post_comment_txt"-->
+                <!--style="@style/TextRegular"-->
+                <!--android:layout_toStartOf="@+id/add_img"-->
+                <!--android:gravity="start"-->
+                <!--android:padding="@dimen/size6"-->
+                <!--android:text="@string/post_about_photo"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="@dimen/text11" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/add_img"-->
+                <!--android:layout_width="@dimen/size25"-->
+                <!--android:layout_height="@dimen/size25"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/size10"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:src="@drawable/camera_gray_icon" />-->
+                <!--</RelativeLayout>-->
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:layout_below="@+id/pin_lay"
+                android:background="@color/app_border" />
+        </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/city_details_pager"
+            style="@style/LayoutMatch" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

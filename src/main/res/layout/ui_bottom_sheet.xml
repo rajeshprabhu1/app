@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/top_lay"-->
+    <!--style="@style/LayoutWidMatch_HeiWrap"-->
+    <!--android:layout_height="@dimen/size20"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--style="@style/LayoutWidMatch_HeiWrap"-->
+    <!--android:layout_height="@dimen/size0.5"-->
+    <!--android:background="@color/app_border" />-->
+
+    <!--<View-->
+    <!--android:layout_width="@dimen/size35"-->
+    <!--android:layout_height="@dimen/size5"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="@dimen/size4"-->
+    <!--android:background="@drawable/gray_rounded_corner_bg"-->
+
+    <!--/>-->
+
+    <!--<View-->
+    <!--style="@style/LayoutWidMatch_HeiWrap"-->
+    <!--android:layout_height="@dimen/size0.5"-->
+    <!--android:layout_marginTop="@dimen/size4"-->
+    <!--android:background="@color/app_border" />-->
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        style="@style/LayoutWrap"
+        android:layout_gravity="center"
+        android:background="@color/transparent">
+
+        <!--<com.hitomi.cmlibrary.CircleMenu-->
+        <!--android:id="@+id/circle_menu"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/size30"-->
+
+        <!--/>-->
+
+        <TextView
+            android:id="@+id/no_values_txt"
+            style="@style/TextMedium"
+            android:layout_marginTop="@dimen/size9"
+            android:background="@color/transparent"
+            android:text="@string/no_values_to_show"
+            android:textSize="@dimen/text12"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_parent_lay"
+    style="@style/LayoutMatch">
+
+    <RelativeLayout style="@style/LayoutMatch">
+
+        <fragment
+            android:id="@+id/profile_screen_map"
+            style="@style/LayoutMatch"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+        <RelativeLayout
+            android:id="@+id/profile_header_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:visibility="visible">
+
+            <include layout="@layout/ui_user_profile_detail_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/radial_menu_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size50">
+
+            <include layout="@layout/ui_radial_menu_view" />
+        </RelativeLayout>
+
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/follow_sug_discrete_scroll_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size60"
+            android:visibility="gone"
+            app:dsv_orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/ask_me_ques_lay"
+            android:layout_marginBottom="@dimen/size80"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            style="@style/LayoutWidMatch_HeiWrap">
+            <include layout="@layout/ui_ask_me_ques"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- Adding bottom sheet after main content -->
+
+    <!--<include layout="@layout/ui_user_profile_bottom_sheet" />-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/user_bottom_sheet_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:elevation="@dimen/size16"
+        app:behavior_peekHeight="@dimen/size60"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/size10"
+        app:cardElevation="0dip"
+        app:layout_behavior="@string/view_pager_bottom_sheet_behavior"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size370"
+            android:background="?attr/colorBackgroundFloating"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:layout_width="@dimen/size80"
+                android:layout_height="@dimen/size6"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/size4"
+                android:layout_marginTop="@dimen/size4"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/gray_circle" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/user_profile_bottom_screen_tab_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/CustomTabText"
+                app:tabTextColor="@color/white"
+                tools:targetApi="lollipop" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/user_profile_bottom_search_screen_pager"
+                style="@style/LayoutMatch" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

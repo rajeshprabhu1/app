@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent_lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:scrollbars="none"
+        style="@style/LayoutMatch"/>
+
+    <TextView
+        android:id="@+id/no_values_txt"
+        style="@style/TextBold"
+        android:textSize="@dimen/text11"
+        android:text="@string/no_values_to_show"
+        android:textColor="@color/black"
+        android:padding="@dimen/size5"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

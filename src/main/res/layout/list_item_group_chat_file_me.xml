@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginBottom="8dp"
+    android:paddingEnd="@dimen/size8"
+    android:paddingStart="@dimen/size8">
+
+    <TextView
+        android:id="@+id/text_group_chat_date"
+        style="@style/LayoutWrap"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size12"
+        android:layout_marginTop="@dimen/size23"
+        android:background="@drawable/group_chat_date_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size4"
+        android:paddingEnd="@dimen/size8"
+        android:paddingStart="@dimen/size8"
+        android:paddingTop="@dimen/size4"
+        android:textColor="@color/groupChatDateText"
+        android:textSize="@dimen/text8" />
+
+    <LinearLayout
+        android:id="@+id/layout_group_chat_file_message"
+        style="@style/LayoutWrap"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/text_group_chat_date"
+        android:layout_marginStart="@dimen/size8"
+        android:background="@drawable/group_chat_file_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size12">
+
+        <ImageView
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_file_message" />
+
+        <TextView
+            android:id="@+id/text_group_chat_file_name"
+            style="@style/TextMedium"
+            android:layout_marginEnd="@dimen/size12"
+            android:layout_marginStart="@dimen/size12"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textSize="@dimen/text12" />
+
+        <View
+            android:layout_width="@dimen/size2"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/size12"
+            android:layout_marginStart="@dimen/size12"
+            android:background="@color/app_border" />
+
+        <Button
+            android:id="@+id/button_group_chat_file_download"
+            android:layout_width="@dimen/size16"
+            android:layout_height="@dimen/size16"
+            android:layout_marginEnd="@dimen/size7"
+            android:layout_marginStart="@dimen/size7"
+            android:background="@drawable/ic_file_message_download" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_group_chat_time"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/layout_group_chat_file_message"
+        android:layout_toStartOf="@id/layout_group_chat_file_message"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text7" />
+
+    <TextView
+        android:id="@+id/text_group_chat_read_receipt"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignEnd="@id/text_group_chat_time"
+        android:textColor="@color/groupChatReadReceiptMe"
+        android:textSize="@dimen/text7"
+        android:textStyle="bold" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/circle_progress"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignEnd="@id/text_group_chat_time"
+        android:visibility="gone"
+        app:draw_progress_text="false"
+        app:progress_background_color="#c1c1c1"
+        app:progress_end_color="#875eff"
+        app:progress_start_color="#875eff"
+        app:progress_stroke_cap="butt"
+        app:progress_stroke_width="3.5dp" />
+
+</RelativeLayout>

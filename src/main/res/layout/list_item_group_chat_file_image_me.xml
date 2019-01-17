@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:paddingStart="@dimen/size8"
+    android:paddingEnd="@dimen/size8">
+
+    <TextView
+        android:id="@+id/text_group_chat_date"
+        android:text="February 22"
+        style="@style/LayoutWrap"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/groupChatDateText"
+        android:background="@drawable/group_chat_date_background"
+        android:paddingStart="@dimen/size8"
+        android:paddingEnd="@dimen/size8"
+        android:paddingTop="@dimen/size4"
+        android:paddingBottom="@dimen/size4"
+        android:layout_marginTop="@dimen/size23"
+        android:layout_marginBottom="@dimen/size4"
+        android:gravity="center"
+        android:textSize="@dimen/text8" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_group_chat_message"
+        style="@style/LayoutWrap"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/text_group_chat_date"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/size12"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_marginTop="@dimen/size8">
+
+        <ImageView
+            android:id="@+id/image_group_chat_file_thumbnail"
+            android:layout_width="@dimen/size200"
+            android:layout_height="@dimen/size145"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_group_chat_time"
+        style="@style/LayoutWrap"
+        android:textSize="@dimen/text7"
+        android:text="21:27"
+        android:textColor="@color/light_gray"
+        android:layout_toStartOf="@id/card_group_chat_message"
+        android:layout_alignBottom="@id/card_group_chat_message"
+        android:layout_marginBottom="@dimen/size8"
+        />
+
+    <TextView
+        android:id="@+id/text_group_chat_read_receipt"
+        style="@style/LayoutWrap"
+        android:textSize="@dimen/text7"
+        android:text="2"
+        android:textColor="@color/groupChatReadReceiptMe"
+        android:textStyle="bold"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignRight="@id/text_group_chat_time"
+  />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/circle_progress"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignRight="@id/text_group_chat_time"
+        android:visibility="gone"
+        app:draw_progress_text="false"
+        app:progress_stroke_width="3.5dp"
+        app:progress_start_color="#875eff"
+        app:progress_end_color="#875eff"
+        app:progress_background_color="#c1c1c1"
+        app:progress_stroke_cap="butt"/>
+
+</RelativeLayout>

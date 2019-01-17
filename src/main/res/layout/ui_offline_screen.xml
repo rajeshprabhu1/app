@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/offline_activity_par_lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/offline_background"
+   style="@style/LayoutMatch">
+
+</RelativeLayout>

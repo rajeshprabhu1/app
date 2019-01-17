@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:id="@+id/comment_screen_frag_par_lay"
+    android:background="@color/white">
+
+    <RelativeLayout
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/comments_bottom_lay">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comments_screen_recycler_view"
+            style="@style/LayoutMatch"
+            android:scrollbars="none" />
+
+
+        <TextView
+            android:id="@+id/no_values_txt"
+            style="@style/TextBold"
+            android:textSize="@dimen/text11"
+            android:text="@string/no_values_to_show"
+            android:textColor="@color/black"
+            android:padding="@dimen/size5"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comments_bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true">
+
+        <View
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size0.5"
+            android:layout_alignParentTop="true"
+            android:background="@color/app_border" />
+
+        <RelativeLayout
+            android:id="@+id/user_img_lay"
+            android:layout_width="@dimen/size55"
+            android:layout_height="@dimen/size55"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/text7"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_marginBottom="@dimen/size5">
+
+
+            <com.ouam.app.utils.RoundedImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size5"
+                android:src="@color/dark_blue" />
+
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size7"
+                android:src="@drawable/user_demo_icon" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/comment_edit_txt"
+            style="@style/EditTextRegular"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:layout_toStartOf="@+id/comments_sent_img"
+            android:hint="@string/post_comments"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/text13" />
+
+        <ImageView
+            android:id="@+id/comments_sent_img"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size8"
+            android:src="@drawable/circle_next_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size45" >
+
+    <RelativeLayout
+        android:id="@+id/center_lay"
+        style="@style/LayoutWrap"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/header_left_img_lay"
+        android:layout_toStartOf="@+id/header_right_img_lay"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/header_search_lay"
+            style="@style/LayoutMatch"
+            android:layout_marginBottom="@dimen/size9"
+            android:layout_marginEnd="@dimen/size3"
+            android:layout_marginStart="@dimen/size3"
+            android:layout_marginTop="@dimen/size9">
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutMatch"
+                app:cardCornerRadius="@dimen/size5">
+
+                <LinearLayout style="@style/LayoutMatch">
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/size5"
+                        android:layout_marginStart="@dimen/size5"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size2"
+                        android:src="@drawable/search" />
+
+                    <RelativeLayout style="@style/LayoutMatch">
+
+                        <EditText
+                            android:id="@+id/header_edt"
+                            style="@style/EditTextMedium"
+                            android:layout_toStartOf="@+id/current_loc_img"
+                            android:cursorVisible="false"
+                            android:editable="false"
+                            android:ellipsize="end"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/search"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text10"
+                            android:visibility="visible"
+                            tools:ignore="Deprecated" />
+
+                        <ImageView
+                            android:id="@+id/current_loc_img"
+                            android:layout_width="@dimen/size20"
+                            android:layout_height="@dimen/size20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/size5"
+                            android:clickable="false"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size2"
+                            android:src="@drawable/current_location_icon" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_txt"
+            style="@style/TextBold"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text9"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/header_user_name_lay"
+            style="@style/LayoutMatch"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/header_user_img_lay"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:layout_margin="@dimen/size4"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    style="@style/LayoutMatch"
+                    android:layout_margin="@dimen/size5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/profile_bg" />
+
+
+                <com.ouam.app.utils.RoundedImageView
+                    android:id="@+id/header_user_img"
+                    style="@style/LayoutMatch"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/size6"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/header_profile_txt"
+                    style="@style/TextMedium"
+                    android:layout_width="@dimen/size13"
+                    android:layout_height="@dimen/size13"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size2"
+                    android:layout_marginStart="@dimen/size2"
+                    android:layout_marginTop="@dimen/size5"
+                    android:background="@drawable/rose_cicle_bg"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text9"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWrap"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/header_user_img_lay"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/header_user_name"
+                    style="@style/TextRegular"
+                    android:gravity="start"
+                    android:maxWidth="@dimen/size80"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size10" />
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/header_user_location"
+                        style="@style/TextRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:maxWidth="@dimen/size80"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size9" />
+
+                    <ImageView
+                        android:id="@+id/header_setting_icon"
+                        android:layout_width="@dimen/size10"
+                        android:layout_height="@dimen/size10"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/settings_icon"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/header_left_img_lay"
+        style="@style/LayoutWrap"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/header_left_first_img_lay"
+            android:layout_width="@dimen/size35"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/header_left_first_img"
+                style="@style/LayoutMatch"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/size5"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_left_second_img_lay"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:padding="@dimen/size3"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size2"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/profile_bg" />
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/header_left_second_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size3"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/header_left_second_txt"
+                style="@style/TextMedium"
+                android:layout_width="@dimen/size13"
+                android:layout_height="@dimen/size13"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size2"
+                android:layout_marginStart="@dimen/size2"
+                android:layout_marginTop="@dimen/size5"
+                android:background="@drawable/rose_cicle_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text9"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_right_img_lay"
+        style="@style/LayoutWrap"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/header_right_first_img_lay"
+            android:layout_width="@dimen/size40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/header__ight_first_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/chat_icon" />
+
+            <TextView
+                android:id="@+id/header_right_first_txt"
+                style="@style/TextMedium"
+                android:layout_width="@dimen/size13"
+                android:layout_height="@dimen/size13"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size2"
+                android:layout_marginStart="@dimen/size2"
+                android:layout_marginTop="@dimen/size5"
+                android:background="@drawable/rose_cicle_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text7"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_right_second_img_lay"
+            android:layout_width="@dimen/size40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size9"
+            android:layout_marginTop="@dimen/size9"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/header_right__second_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/size2"
+                android:layout_marginTop="@dimen/size2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/notification_icon" />
+
+
+            <TextView
+                android:id="@+id/header_right_second_txt"
+                style="@style/TextMedium"
+                android:layout_width="@dimen/size13"
+                android:layout_height="@dimen/size13"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/size5"
+                android:background="@drawable/rose_cicle_bg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text9"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

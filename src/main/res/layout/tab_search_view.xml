@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LayoutMatch"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent">
+    <RelativeLayout
+        android:id="@+id/search_place_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <RelativeLayout
+            android:id="@+id/search_place_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size25"
+            >
+
+            <TextView
+                android:id="@+id/search_places_txt"
+                style="@style/TextBold"
+                android:textColor="@color/white"
+                android:text="@string/places"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text11"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_people_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+        <RelativeLayout
+            android:id="@+id/search_people_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size25">
+
+            <TextView
+                android:id="@+id/search_people_txt"
+                style="@style/TextBold"
+                android:textColor="@color/gray"
+                android:text="@string/people"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text11"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_cities_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+        <RelativeLayout
+            android:id="@+id/search_cities_inner_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size25">
+
+            <TextView
+                android:id="@+id/search_cities_txt"
+                style="@style/TextBold"
+                android:textColor="@color/gray"
+                android:text="@string/cities"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text11"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

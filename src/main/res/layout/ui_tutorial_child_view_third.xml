@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@drawable/tutorial_screen_third_bg"
+   >
+<LinearLayout
+    android:id="@+id/title_lay"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginTop="@dimen/size45"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size10"
+        android:src="@drawable/undiscover_text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextBold"
+        android:text="@string/login_to"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text15"
+        android:gravity="center"
+        />
+</LinearLayout>
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_below="@id/title_lay"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/size50"
+        android:layout_marginEnd="@dimen/size50"
+        android:layout_marginTop="@dimen/size100">
+
+        <Button
+            android:id="@+id/login_with_google_btn"
+            style="@style/ButtonBold"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size6"
+            android:text="@string/login_with_google"
+            android:layout_marginStart="@dimen/size50"
+            android:textAllCaps="false"
+            android:textSize="@dimen/size12"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/login_with_facebook_btn"
+            style="@style/ButtonBold"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size6"
+            android:text="@string/login_with_facebook"
+            android:textAllCaps="false"
+            android:textSize="@dimen/size12"
+            tools:targetApi="lollipop" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

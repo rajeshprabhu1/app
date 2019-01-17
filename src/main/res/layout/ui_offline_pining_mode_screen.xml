@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/offline_pin_mode_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@drawable/offline_background">
+
+    <RelativeLayout
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/offline_pin_bottom_lay"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/offline_pin_header_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size30"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size60"
+                android:layout_marginTop="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@drawable/undiscover_text" />
+
+            <TextView
+                style="@style/TextBold"
+                android:paddingBottom="@dimen/size7"
+                android:paddingTop="@dimen/size1"
+                android:text="@string/offline_mode"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/offline_pin_list_lay"
+            style="@style/LayoutMatch"
+            android:layout_below="@+id/offline_pin_header_lay"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextRegular"
+                android:background="@color/blue_dark_clr"
+                android:padding="@dimen/size7"
+                android:text="@string/stored_location"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text13" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/offline_mode_pin_recycler_view"
+                style="@style/LayoutMatch"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/offline_pin_empty_lay"
+            style="@style/LayoutMatch"
+            android:layout_below="@+id/offline_pin_header_lay"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/TextMedium"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/size15"
+                android:layout_weight="1"
+                android:text="@string/offline_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text11" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="@dimen/size55"
+                android:layout_marginEnd="@dimen/size55"
+                android:layout_marginBottom="@dimen/size15"
+                android:src="@drawable/off_line_man_img" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/offline_pin_bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/size20"
+        android:paddingEnd="@dimen/size15"
+        android:paddingStart="@dimen/size15">
+
+        <TextView
+            android:id="@+id/online_pin_mode_txt"
+            style="@style/TextRegular"
+            android:paddingBottom="@dimen/size30"
+            android:text="@string/online_txt"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text13"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/offline_pin_btn_mode_lay"
+            style="@style/ButtonBold"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size15"
+            android:layout_marginEnd="@dimen/size45"
+            android:layout_marginStart="@dimen/size45"
+            android:elevation="@dimen/size0.25"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                style="@style/TextBold"
+                android:padding="@dimen/size3"
+                android:text="@string/store_current_location"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text13" />
+
+            <TextView
+                android:id="@+id/offline_pin_lat_lng_txt"
+                style="@style/TextRegular"
+                android:padding="@dimen/size3"
+                android:text="123,333N,234,544W"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text11" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

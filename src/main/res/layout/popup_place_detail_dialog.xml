@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size10"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/size15"
+        android:rotation="180"
+        android:layout_marginTop="@dimen/size40"
+        android:src="@drawable/down_icon"
+        android:tint="@color/white" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/size5"
+        app:cardCornerRadius="@dimen/size10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/web_txt"
+                style="@style/TextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="www.gmail.com"
+                android:textSize="@dimen/size10" />
+
+            <TextView
+                style="@style/TextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="start"
+                android:text="Address:"
+                android:textSize="@dimen/size10" />
+
+            <TextView
+                android:id="@+id/address_txt"
+                style="@style/TextBold"
+                android:layout_width="@dimen/size100"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size5"
+                android:gravity="start"
+                android:text="955 w fulton market, Chicago, IL, 60607"
+                android:textColor="@color/place_txt_color"
+                android:textSize="@dimen/size10" />
+
+            <TextView
+                style="@style/TextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="start"
+                android:text="Phone:"
+                android:textSize="@dimen/size10" />
+
+            <TextView
+                android:id="@+id/phone_txt"
+                style="@style/TextBold"
+                android:layout_width="@dimen/size100"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size5"
+                android:gravity="start"
+                android:text="(331) 226-9012"
+                android:textColor="@color/place_txt_color"
+                android:textSize="@dimen/size10" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

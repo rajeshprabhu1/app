@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_bottom_sheet_lay"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size370"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/size37"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <LinearLayout
+        android:id="@+id/top_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <View
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size1"
+            android:layout_marginTop="@dimen/size1"
+            android:background="@color/app_border" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/user_profile_bottom_screen_tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@null"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabTextColor="@color/white"
+        tools:targetApi="lollipop" />
+
+
+</LinearLayout>

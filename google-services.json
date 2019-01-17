@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "1097194285465",
+    "firebase_url": "https://iroam-b5849.firebaseio.com",
+    "project_id": "iroam-b5849",
+    "storage_bucket": "iroam-b5849.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097194285465:android:847eaf0fa50469cb",
+        "android_client_info": {
+          "package_name": "com.ouam.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097194285465-tml3er4njn0q15phag8i760bdgcuvfc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ouam.app",
+            "certificate_hash": "01234b14372ea61c469cb5fa6a7b6aec38efee0c"
+          }
+        },
+        {
+          "client_id": "1097194285465-k0m3q1vft6jrjgo4b16kpmps96lqdd4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ouam.app",
+            "certificate_hash": "53a82224e07e4501b13fd4af82ffa0c065ff498a"
+          }
+        },
+        {
+          "client_id": "1097194285465-bl01paa97la2c262stcav6f2n50obl2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ouam.app",
+            "certificate_hash": "14d8ea801aef4e3e0e1d422fbc9603c92dc42e3f"
+          }
+        },
+        {
+          "client_id": "1097194285465-btfplsrksss39eomqmum0rfk2gfj9tu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHOmjxhlO6EQPtjBMJct2xKTz96qtPQ2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097194285465-em2c6lire8l93l06alnev9rh9f9ko3ib.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097194285465-ds56f9qo2vj6r8i97s21og8c0b2os4sf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ouam.app"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

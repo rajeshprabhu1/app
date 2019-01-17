@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:paddingEnd="0dp"
+    android:paddingStart="@dimen/size8">
+
+    <View
+        android:id="@+id/view_group_chat_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size12"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/text_group_chat_date"
+        style="@style/LayoutWrap"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/view_group_chat_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size12"
+        android:layout_marginTop="@dimen/size12"
+        android:background="@drawable/group_chat_date_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size4"
+        android:paddingEnd="@dimen/size8"
+        android:paddingStart="@dimen/size8"
+        android:paddingTop="@dimen/size4"
+        android:textColor="@color/groupChatDateText"
+        android:textSize="@dimen/text8" />
+
+
+    <RelativeLayout
+        android:id="@+id/right_lay"
+        style="@style/LayoutWrap"
+        android:layout_below="@id/text_group_chat_date"
+        android:layout_marginEnd="@dimen/size15"
+        android:layout_marginTop="@dimen/size10">
+
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/right_msg_lay"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/chat_right_side_img" />
+
+
+        <LinearLayout
+            android:id="@+id/right_msg_lay"
+            style="@style/LayoutWrap"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size7"
+            android:background="@drawable/chat_rounded_sky_blue_bg"
+            android:minWidth="@dimen/size40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_group_chat_message"
+                style="@style/TextBold"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:maxWidth="@dimen/size180"
+                android:padding="@dimen/size5"
+                android:paddingTop="@dimen/size8"
+                android:textColor="@color/chat_bubble_receiver"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/text_group_chat_edited"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:paddingEnd="@dimen/size12"
+                android:paddingStart="@dimen/size12"
+                android:text="@string/edited"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text10"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/url_preview_container"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginEnd="@dimen/size12"
+                    android:layout_marginStart="@dimen/size12"
+                    android:background="@color/white"
+                    android:maxWidth="@dimen/size260" />
+
+                <TextView
+                    android:id="@+id/text_url_preview_site_name"
+                    style="@style/LayoutWrap"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/size260"
+                    android:paddingEnd="@dimen/size1"
+                    android:paddingStart="@dimen/size12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text8" />
+
+                <TextView
+                    android:id="@+id/text_url_preview_title"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/size260"
+                    android:paddingEnd="@dimen/size12"
+                    android:paddingStart="@dimen/size12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text8" />
+
+                <TextView
+                    android:id="@+id/text_url_preview_description"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:maxWidth="@dimen/size260"
+                    android:paddingBottom="@dimen/size4"
+                    android:paddingEnd="@dimen/size12"
+                    android:paddingStart="@dimen/size12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text8" />
+
+                <ImageView
+                    android:id="@+id/image_url_preview_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size90"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:maxWidth="@dimen/size260"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/LayoutWrap"
+            android:layout_alignBottom="@+id/right_msg_lay"
+            android:layout_toStartOf="@+id/right_msg_lay"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_group_chat_time"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="end"
+                android:textColor="@color/light_gray"
+                android:text="asda"
+                android:textSize="@dimen/text7" />
+
+
+            <TextView
+                android:id="@+id/text_group_chat_read_receipt"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/size5"
+                android:textColor="@color/groupChatReadReceiptMe"
+                android:textSize="@dimen/text7"
+                android:text="1"
+                android:layout_gravity="end"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

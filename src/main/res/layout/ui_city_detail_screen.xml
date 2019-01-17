@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/city_detials_par_lay"
+
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:background="@color/transparent"
+        android:layout_weight="45">
+
+        <ImageView
+            android:id="@+id/place_img"
+            style="@style/LayoutMatch"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/demo_img" />
+
+        <ImageView
+            android:id="@+id/down_img"
+            android:layout_width="@dimen/size35"
+            android:layout_height="@dimen/size35"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/size4"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/back_white" />
+
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size8"
+            android:layout_toEndOf="@+id/down_img"
+            android:layout_toStartOf="@+id/been_there_img"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/place_name_txt"
+                style="@style/TextBold"
+                android:singleLine="true"
+                android:text="3 Dots and a Dash"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/place_location_txt"
+                style="@style/TextBold"
+                android:singleLine="true"
+                android:text="Chicago, IL US"
+                android:textSize="@dimen/text9" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/been_there_img"
+            android:layout_width="@dimen/size15"
+            android:layout_height="@dimen/size15"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/size15"
+            android:adjustViewBounds="true"
+            android:background="@drawable/check_icon"
+            android:contentDescription="@string/app_name"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/city_details_tab_lay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@null"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/CustomTabText"
+            app:tabTextColor="@color/white"
+            tools:targetApi="lollipop" />
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <RelativeLayout
+                android:id="@+id/user_img_lay"
+                android:layout_width="@dimen/size55"
+                android:layout_height="@dimen/size55"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size5"
+                android:padding="@dimen/size5">
+
+                <com.ouam.app.utils.RoundedImageView
+                    style="@style/LayoutMatch"
+                    android:src="@color/black" />
+
+                <com.ouam.app.utils.RoundedImageView
+                    android:id="@+id/user_img"
+                    style="@style/LayoutMatch"
+                    android:layout_margin="@dimen/size2"
+                    android:src="@drawable/user_demo_icon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pin_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_width="@dimen/size150"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:layout_height="@dimen/size40"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size3"
+                        android:src="@drawable/been_there_grey_icon" />
+
+                    <ImageView
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:layout_height="@dimen/size40"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size3"
+                        android:src="@drawable/to_be_explored_grey_icon" />
+
+                    <ImageView
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:layout_height="@dimen/size40"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size3"
+                        android:src="@drawable/hidden_gem_grey_icon" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextRegular"
+                    android:text="@string/add_this_place_to_map"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text9" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:layout_below="@+id/pin_lay"
+                android:background="@color/app_border" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/city_details_pager"
+            style="@style/LayoutMatch" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

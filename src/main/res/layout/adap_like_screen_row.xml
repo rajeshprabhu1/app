@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <RelativeLayout
+        android:id="@+id/view_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <RelativeLayout
+            android:id="@+id/user_img_lay"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size50"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size1">
+
+
+            <com.ouam.app.utils.RoundedImageView
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size5"
+                android:src="@color/black" />
+
+
+            <com.ouam.app.utils.RoundedImageView
+                android:id="@+id/user_img"
+                style="@style/LayoutMatch"
+                android:layout_margin="@dimen/size7"
+                android:src="@drawable/user_demo_icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/user_img_lay"
+            android:layout_toStartOf="@+id/comments_time_txt"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/TextBold"
+                android:layout_marginEnd="@dimen/size5"
+                android:gravity="start"
+                android:maxWidth="@dimen/size60"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text10" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/comments_time_txt"
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:padding="@dimen/size8"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/text9" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.25"
+        android:layout_below="@id/view_lay"
+        android:background="@color/app_border" />
+
+</RelativeLayout>

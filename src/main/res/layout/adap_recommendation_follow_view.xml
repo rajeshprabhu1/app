@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_height="@dimen/size120"  >
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        style="@style/LayoutWidMatch_HeiWrap" >
+
+        <android.support.v7.widget.CardView
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size12"
+            android:elevation="@dimen/size5"
+            app:cardCornerRadius="@dimen/size10"
+            app:cardElevation="0dip"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="0dip">
+
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+
+                    <TextView
+                        style="@style/TextMedium"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/size20"
+                        android:layout_marginTop="@dimen/size5"
+                        android:layout_toStartOf="@+id/close_img"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/similar_travelers"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/text8" />
+
+                    <ImageView
+                        android:id="@+id/close_img"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/close_icon_new" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size50"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/size5"
+                    android:paddingStart="0dip">
+
+                    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+
+                        <LinearLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_toStartOf="@+id/follow_btn"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/user_name_txt"
+                                style="@style/TextBold"
+                                android:layout_marginTop="@dimen/size3"
+                                android:ellipsize="end"
+                                android:gravity="start"
+                                android:maxLines="2"
+                                android:textSize="@dimen/text10" />
+
+
+                            <TextView
+                                android:id="@+id/place_name_txt"
+                                style="@style/TextMedium"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gray_light"
+                                android:textSize="@dimen/text9" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/follow_btn"
+                            style="@style/ButtonBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/size10"
+                            android:background="@drawable/follow_btn"
+                            android:paddingBottom="@dimen/size3"
+                            android:paddingEnd="@dimen/size10"
+                            android:paddingStart="@dimen/size10"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/follow"
+                            android:textAllCaps="true"
+                            android:textColor="@color/followed_bg_end_color"
+                            android:textSize="@dimen/text6" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginTop="@dimen/size1">
+
+                        <TextView
+                            android:id="@+id/pin_count_txt"
+                            style="@style/TextMedium"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text8" />
+
+                        <TextView
+                            android:id="@+id/follower_count_txt"
+                            style="@style/TextMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/size20"
+                            android:gravity="start"
+                            android:layout_toEndOf="@+id/pin_count_txt"
+                            android:layout_toStartOf="@+id/right_arrow_img"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text8" />
+
+                        <ImageView
+                            android:id="@+id/right_arrow_img"
+                            android:layout_width="@dimen/size20"
+                            android:layout_height="@dimen/size20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:paddingBottom="@dimen/size5"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="@dimen/size5"
+                            android:paddingTop="@dimen/size5"
+                            android:src="@drawable/right_icon" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dismiss_notification_txt"
+                    style="@style/TextMedium"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/size5"
+                    android:text="@string/dismiss_notification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text8" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size65"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:elevation="0dip"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dip"
+            tools:targetApi="lollipop">
+
+            <RelativeLayout
+                android:id="@+id/user_img_lay"
+                style="@style/LayoutMatch">
+
+                <RelativeLayout
+                    style="@style/LayoutWrap"
+                    android:layout_marginEnd="@dimen/size5">
+
+                    <ImageView
+                        android:id="@+id/user_bg_img"
+                        style="@style/LayoutMatch"
+                        android:layout_margin="@dimen/size4"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/profile_bg" />
+
+                    <com.ouam.app.utils.RoundedImageView
+                        android:id="@+id/user_img"
+                        style="@style/LayoutMatch"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/size5"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/pin_type_image"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/size2"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="@dimen/size5"
+                    android:paddingStart="@dimen/size5"
+                    android:src="@drawable/lost_nomad"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
